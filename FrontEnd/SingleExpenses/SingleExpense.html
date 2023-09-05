@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Expenses</title>
+  </head>
+  <body>
+    <a href="../Login/login.html" id="btn">
+    <button id="btn">LogOut</button>
+    </a>
+    <h2>
+      Expense Data
+      <p id="nameOFUser"></p>
+      <button id="Razorbtn">Buy Premium</button>
+      <button onclick="download()" id="downloadexpense">Download File</button>
+      <div>
+        <p id="message"></p>
+      </div>
+    </div>
+    <div id="main-div">
+<style>
+      table, th, td {
+        border:1px solid black;
+      }
+      </style>
+        <table>
+          <thead>
+            <tr>
+              <th>Amount</th>
+              <th>Description</th>
+              <th>Category</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="expense-list"></tbody>
+        </table>
+        <div>
+            <button id="subtract">Previous</button>
+            <button id="output">1</button>
+            <button id="add">Next</button>
+            <button id="Total"></button>
+            <form id="limit-form">
+              <select name="limit" id="limit">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+              </select>
+              <input type="submit" value="Set Limit" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="LeaderBoard"></div>
+    </div>
+  </body>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.5/axios.min.js"></script>
+  <script src="./SignleExpense.js"></script>
+</html>

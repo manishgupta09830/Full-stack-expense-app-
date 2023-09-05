@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense App</title>
+  </head>
+  <body>
+        <form class="form" style="text-align: center;">
+          <h1 > Expenses </h1>
+          <p id="nameOFUser"></p>
+        </h1>
+        <div
+          id="message"
+        ></div>
+
+          <div>
+            <label for="amount">Choose expenseamount:</label>
+            <input
+              name="expenseAmount"
+              type="number"
+              id="amount"
+              placeholder="Amount"
+            />
+          </div>
+          <br>
+          <div>
+            <label for="description">Choose description:</label>
+            <input
+              name="description"
+              type="text"
+              id="description"
+              placeholder="Description"
+            />
+          </div>
+          <br>
+          <div>
+            <label for="category">Choose a category:</label>
+            <select
+              name="category"
+              id="category"
+            >
+              <option>Movies</option>
+              <option selected>Food</option>
+              <option>Fuel</option>
+              <option>Shopping</option>
+              <option>Others</option>
+          </select>
+<div> <br>
+            <input
+              type="submit"
+              value="Add Expense"
+              id="expenseBtn"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.5/axios.min.js"></script>
+    <script src="./Expense.js"></script>
+  </body>
+</html>
